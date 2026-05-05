@@ -8,7 +8,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mesto</title>
-    <script type="module" crossorigin src="./assets/index-BBBGoiNI.js"></script>
+    <script type="module" crossorigin src="./assets/index-DU8qdVJI.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-DokAJ7eR.css">
   </head>
   <body class="page">
@@ -47,21 +47,20 @@
               <input
                 type="text"
                 name="user-name"
-                id="user-name"
                 class="popup__input popup__input_type_name"
                 placeholder="Имя"
                 required
                 minlength="2"
                 maxlength="40"
+                pattern="^[a-zA-Zа-яА-ЯёЁ\-\s]+$"
               />
             </label>
-            <span class="popup__error user-name-error"></span>
+            <span class="popup__error" data-error="user-name"></span>
             
             <label class="popup__label">
               <input
                 type="text"
                 name="user-description"
-                id="user-description"
                 class="popup__input popup__input_type_description"
                 placeholder="Занятие"
                 required
@@ -69,7 +68,7 @@
                 maxlength="200"
               />
             </label>
-            <span class="popup__error user-description-error"></span>
+            <span class="popup__error" data-error="user-description"></span>
             
             <button
               type="submit"
@@ -91,27 +90,26 @@
               <input
                 type="text"
                 name="place-name"
-                id="place-name"
                 class="popup__input popup__input_type_card-name"
                 placeholder="Название"
                 required
                 minlength="2"
                 maxlength="30"
+                pattern="^[a-zA-Zа-яА-ЯёЁ\-\s]+$"
               />
             </label>
-            <span class="popup__error place-name-error"></span>
+            <span class="popup__error" data-error="place-name"></span>
             
             <label class="popup__label">
               <input
                 type="url"
                 name="place-link"
-                id="place-link"
                 class="popup__input popup__input_type_url"
                 placeholder="Ссылка на картинку"
                 required
               />
             </label>
-            <span class="popup__error place-link-error"></span>
+            <span class="popup__error" data-error="place-link"></span>
             
             <button
               type="submit"
@@ -141,13 +139,12 @@
               <input
                 type="url"
                 name="user-avatar"
-                id="user-avatar"
                 class="popup__input popup__input_type_avatar"
                 placeholder="Ссылка на изображение"
                 required
               />
             </label>
-            <span class="popup__error user-avatar-error"></span>
+            <span class="popup__error" data-error="user-avatar"></span>
             
             <button
               type="submit"
